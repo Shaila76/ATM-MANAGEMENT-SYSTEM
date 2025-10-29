@@ -1,0 +1,14 @@
+CREATE DATABASE ATM;
+USE ATM;
+CREATE TABLE Information(acc_num int, _name varchar(45), _faname varchar(45), addre varchar(45), _pin varchar(45), edu varchar(45),  occu varchar(45), phone varchar(45), dob varchar(45), bal varchar(45));
+SELECT * FROM Information;
+
+CREATE TABLE Transactions (
+    Tid INT PRIMARY KEY AUTO_INCREMENT,
+    acc_num INT NOT NULL,
+    Type VARCHAR(35),
+    TDate DATE,
+    bal varchar(35)
+);
+
+SELECT * FROM Transactions;
